@@ -1,0 +1,205 @@
+%-------------------------
+% Resume in Latex
+% Author : Javier Echeverria
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Javier Echeverria} \\ \vspace{1pt}
+    \small 305-987-9702 $|$ \href{mailto:x@x.com}{\underline{javier.ruben.echeverria@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/javier-echeverria-780617195/}{\underline{linkedin.com/in/javier}} $|$
+    \href{https://github.com/jrecheverria?tab=repositories}{\underline{github.com/jrecheverria}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of South Florida}{Tampa, FL}
+      {Bachelor of Science in Computer Engineering}{July. 2016 -- December 2020}
+      \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Associate Vice President - Software Engineer }{August 2022 -- Present}
+      {Citi Bank}{Tampa, FL}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the development of microservices using Spring Boot, enabling seamless access to JFrog Artifactory Services and enhancing the efficiency of the system.}
+        \resumeItem{Implemented robust monitoring and metrics on services, significantly improving application resilience and ensuring a proactive approach to performance optimization.}
+        \resumeItem{Demonstrated a commitment to operational excellence by providing on-call support during outages, contributing to swift issue resolution and minimizing downtime.}
+        \resumeItem{Innovatively created custom Splunk dashboards to facilitate in-depth analysis of ongoing processes, providing actionable insights for continuous improvement and system optimization.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {SEP Software Engineer I / II}{February 2021 -- August 2022}
+      {JP Morgan Chase}{Tampa, FL}
+      \resumeItemListStart
+        \resumeItem{Engineered a microservices-oriented ticketing system using Java Spring Boot to streamline operations for multiple product delivery teams.}
+        \resumeItem{Accelerated the Cassandra record cleanup process by over 80\% for 1.7 million records through the implementation of a highly efficient, multi-threaded approach.}
+        \resumeItem{Applied advanced Elasticsearch Java Client techniques to execute intricate nested aggregation queries, enhancing data retrieval and analysis capabilities.}
+        \resumeItem{Deployed Kubernetes to proficiently manage the lifecycle of Docker containers, optimizing deployment and scalability for the overall system.}
+    \resumeItemListEnd
+    
+  \resumeSubheading
+      {Software Engineering Intern}{May 2019 -- July 2019}
+      {Sofwerx}{Tampa, FL}
+      \resumeItemListStart
+        \resumeItem{Collaborated on a layered approach to reconnaissance of ultra-dense urban environments using object recognition, network fingerprinting, RF signatures, and machine learning.}
+        \resumeItem{Utilized IBM Watson to develop, refine, and train real-time object detection and image classification models of security cameras with an average 95\% accuracy.}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Brain-Computer Interface Research Assistant}{May 2019 -- July 2019}
+      {University of South Florida}{Tampa, FL}
+      \resumeItemListStart
+        \resumeItem{Engineered an augmented reality application utilizing the Magic Leap AR headset, simulating emergency battlefield medical procedures. Developed the application using C\# and Unity game engine, showcasing proficiency in both programming and cutting-edge technology.}
+         \resumeItem{Contributed 5K+ lines of code to an established codebase via Git}
+        \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+ 
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{ABAHire.io} $|$ \emph{Typescript, React, Next.js, MySQL, Sanity, Clerk}}{June 2023 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed ABA Hire, a full-stack web app, connecting 150+ users in the Applied Behavior Analysis field with job opportunities.}
+            \resumeItem{Built an intuitive React front-end using Mantine UI, prioritizing best practices for a dynamic user experience.}
+            \resumeItem{Designed a robust database structure to efficiently manage user information and relationships}
+             \resumeItem{Utilized Next.js for seamless navigation and improved performance, deploying the platform on Vercel for scalability and fast load times.}
+          \resumeItemListEnd
+     \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (Postgres), JavaScript, Typescript, Go, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Node.js, Next.js, JUnit,  Springboot} \\
+     \textbf{Developer Tools}{: Git, Docker, Kubernetes, Amazon Web Services, VS Code, IntelliJ} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
